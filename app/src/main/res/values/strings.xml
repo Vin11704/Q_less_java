@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Q_less_java</string>
+    <string name="q_less_string">Q-less</string>
+    <string name="asset_1">asset_1_3x_1</string>
+    <string name="welcome_1_head">Streamline your mealtime</string>
+    <string name="welcome_1_text">Say goodbye to long queues and waiting times.
+                                With Q-Less, you can order your favorite meals ahead
+                                of time and pick them up hassle-free.</string>
+    <string name="welcome_2_head">Order from anywhere</string>
+    <string name="welcome_2_text">Whether you\'re at home or on the go, our app lets
+                                you browse menus and schedule pickups at your convenience.
+                                Enjoy a seamless ordering experience every time.</string>
+    <string name="welcome_3_head">Real-time updates</string>
+    <string name="welcome_3_text">Receive instant notifications about order status,
+                                pickup times, and exclusive deals. Spend less time
+                                waiting and more time savoring delicious meals with Q-Less!</string>
 </resources>
