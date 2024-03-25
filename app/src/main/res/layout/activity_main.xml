@@ -1,42 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".welcome_page">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Random Images" />
 
-        <TextView
-            android:id="@+id/q_less_"
-            android:layout_width="135dp"
-            android:layout_height="54dp"
-            android:layout_gravity="center_horizontal|center"
-            android:fontFamily="Bitter"
-            android:gravity="center"
-            android:text="@string/q_less_string"
-            android:textColor="@color/q_less__color"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/charaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Me" />
 
-        <ImageView
-            android:id="@+id/asset_1_3x_1"
-            android:layout_width="354dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:contentDescription="@string/asset_1"
-
-            android:src="@drawable/asset_1_3x_1"
-            android:textAlignment="center" />
-
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
