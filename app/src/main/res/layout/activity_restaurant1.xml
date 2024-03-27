@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurant1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="198dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/store1_arrow"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/store1_search"
+                    android:layout_width="77dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/search"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/store1_profile"
+                    android:layout_width="84dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="52dp"
+                    android:src="@drawable/store1_burger"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/store1_fav"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/fav"
+                    app:layout_constraintStart_toStartOf="@+id/store1_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_profile" />
+
+                <ImageView
+                    android:id="@+id/store1_duration"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/duration"
+                    app:layout_constraintStart_toStartOf="@+id/store1_fav"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_fav" />
+
+                <ImageView
+                    android:id="@+id/store1_pickup"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintStart_toStartOf="@+id/store1_duration"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_duration"
+                    app:srcCompat="@drawable/pickup" />
+
+                <ImageView
+                    android:id="@+id/store1_location"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:layout_constraintStart_toStartOf="@+id/store1_pickup"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_pickup"
+                    app:srcCompat="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="36dp"
+                    android:text="McYouTwit Burgers and Fries"
+                    android:textColor="@color/q_less__color"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/store1_profile"
+                    app:layout_constraintTop_toTopOf="@+id/store1_profile" />
+
+                <TextView
+                    android:id="@+id/store1_fav_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingTop="2dp"
+                    android:text="4.3"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/store1_fav"
+                    app:layout_constraintTop_toTopOf="@+id/store1_fav" />
+
+                <TextView
+                    android:id="@+id/store1_duration_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingTop="2dp"
+                    android:text="Pickup in 11 minutes"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/store1_duration"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_fav" />
+
+                <TextView
+                    android:id="@+id/store1_pickup_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingTop="2dp"
+                    android:text="0.2km away"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/store1_pickup"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_duration" />
+
+                <TextView
+                    android:id="@+id/store1_location_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingTop="2dp"
+                    android:text="8 Somapah Rd, Singapore 487372"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/store1_location"
+                    app:layout_constraintTop_toBottomOf="@+id/store1_pickup" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="6dp"
+                    android:text="| 102 ratings"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/store1_fav_textView"
+                    app:layout_constraintTop_toTopOf="@+id/store1_fav_textView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,11 @@
     <style name="Base.Theme.Q_less_java" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/q_less__color</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="color">@color/black</item>
     </style>
 
     <style name="Theme.Q_less_java" parent="Base.Theme.Q_less_java" />
 </resources>
+

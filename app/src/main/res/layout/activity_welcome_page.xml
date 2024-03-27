@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
+        tools:layout_editor_absoluteX="-47dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <TextView
             android:id="@+id/welcome_img_1"
@@ -50,37 +50,31 @@
             android:layout_gravity="center_horizontal|center"
             android:fontFamily="@font/roboto"
             android:gravity="center"
-            android:paddingTop="10dp"
             android:paddingLeft="30dp"
+            android:paddingTop="10dp"
             android:paddingRight="30dp"
             android:text="@string/welcome_1_text"
             android:textSize="18sp" />
 
         <ImageView
             android:id="@+id/pagination_1"
-            android:src="@drawable/pagination_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="50dp"
+            android:src="@drawable/pagination_1" />
 
         <Button
             android:id="@+id/next_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/next_button"
             android:text="Next"
+            android:textAllCaps="false"
             android:textColor="@color/q_less__color"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:textAllCaps="false"
-            android:background="@drawable/next_button"/>
-
+            android:textStyle="bold" />
 
     </LinearLayout>
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
