@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".restaurant_list">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/food_item_card1"
+        android:layout_width="387dp"
+        android:layout_height="122dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnknownId"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/food_item_card2"
+        android:layout_width="387dp"
+        android:layout_height="122dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_item_card1"
+        tools:ignore="UnknownId"/>
+
+    <ImageView
+        android:id="@+id/restaurant1_food_image"
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/store1_burger"
+        app:layout_constraintBottom_toTopOf="@+id/restaurant2_food_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_item_card2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/restaurant1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="292dp"
+        android:text="McYouTwit Burgers and Fries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/store1_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="4.3 stars | Western | 0.2km away"
+        app:layout_constraintStart_toEndOf="@+id/restaurant1_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant1_name" />
+
+    <TextView
+        android:id="@+id/store1_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Pick up in 11 min"
+        app:layout_constraintStart_toEndOf="@+id/restaurant1_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/store1_details" />
+
+    <ImageView
+        android:id="@+id/restaurant2_food_image"
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="36dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/store2_ice_cream"
+        app:layout_constraintBottom_toTopOf="@+id/restaurant3_food_image"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/restaurant2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="100dp"
+        android:text="Malone's Cone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant1_name" />
+
+    <TextView
+        android:id="@+id/store2_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="3.4 stars | Dessert | 0.3km away"
+        app:layout_constraintStart_toEndOf="@+id/restaurant2_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant2_name" />
+
+    <TextView
+        android:id="@+id/store2_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Pick up in 13 min"
+        app:layout_constraintStart_toEndOf="@+id/restaurant2_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/store2_details" />
+
+    <ImageView
+        android:id="@+id/restaurant3_food_image"
+        android:layout_width="102dp"
+        android:layout_height="94dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/store3_rice_noodle"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="544dp" />
+
+    <TextView
+        android:id="@+id/restaurant3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="36dp"
+        android:text="Ah Huat Chicken Rice Noodles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant2_food_image" />
+
+    <TextView
+        android:id="@+id/store3_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="7dp"
+        android:text="4.5 stars | Chinese | 0.3km away"
+        app:layout_constraintStart_toEndOf="@+id/restaurant3_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant3_name" />
+
+    <TextView
+        android:id="@+id/store3_pickup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:text="Pick up in 15 min"
+        app:layout_constraintStart_toEndOf="@+id/restaurant3_food_image"
+        app:layout_constraintTop_toBottomOf="@+id/store3_details" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
