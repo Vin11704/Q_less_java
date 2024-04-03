@@ -9,8 +9,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="198dp">
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,6 +148,272 @@
                     app:layout_constraintTop_toTopOf="@+id/store1_fav_textView" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:id="@+id/store1_menu1_profile"
+                    android:layout_width="107dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/store1_burger" />
+
+                <TextView
+                    android:id="@+id/store1_menu1_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="5dp"
+                    android:text="Signature McYouTwit Burger"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store1_menu1_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/store1_menu1_description" />
+
+                <TextView
+                    android:id="@+id/store1_menu1_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="90dp"
+                    android:text="@string/store1_menu1_price" />
+
+                <ImageView
+                    android:id="@+id/add_to_chart_11"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/add_to_cart" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:id="@+id/add_to_chart_12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/add_to_cart" />
+
+                <ImageView
+                    android:id="@+id/store1_menu2_profile"
+                    android:layout_width="107dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/store1_menu2" />
+
+                <TextView
+                    android:id="@+id/store1_menu2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/store1_menu2_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store1_menu2_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/store1_menu2_description" />
+
+                <TextView
+                    android:id="@+id/store1_menu2_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="90dp"
+                    android:text="@string/store1_menu2_price" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:id="@+id/add_to_chart_13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/add_to_cart" />
+
+                <ImageView
+                    android:id="@+id/store1_menu3_profile"
+                    android:layout_width="107dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/store1_menu3"/>
+
+                <TextView
+                    android:id="@+id/store1_menu3_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/store1_menu3_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store1_menu3_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/store1_menu3_description" />
+
+                <TextView
+                    android:id="@+id/store1_menu3_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="90dp"
+                    android:text="@string/store1_menu3_price" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:id="@+id/add_to_chart_14"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/add_to_cart" />
+
+                <ImageView
+                    android:id="@+id/store1_menu4_profile"
+                    android:layout_width="107dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/store1_menu4" />
+
+                <TextView
+                    android:id="@+id/store1_menu4_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/store1_menu4_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store1_menu4_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/store1_menu4_description" />
+
+                <TextView
+                    android:id="@+id/store1_menu4_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="90dp"
+                    android:text="@string/store1_menu4_price" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="15dp">
+
+                <ImageView
+                    android:id="@+id/add_to_chart_15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="90dp"
+                    app:srcCompat="@drawable/add_to_cart" />
+
+                <ImageView
+                    android:layout_width="107dp"
+                    android:layout_height="114dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/store1_burger" />
+
+                <TextView
+                    android:id="@+id/store1_menu5_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="5dp"
+                    android:text="Signature McYouTwit Burger"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/store1_menu5_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="30dp"
+                    android:text="@string/store1_menu1_description" />
+
+                <TextView
+                    android:id="@+id/store1_menu5_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:paddingTop="90dp"
+                    android:text="@string/store1_menu1_price" />
+
+            </androidx.cardview.widget.CardView>
+
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

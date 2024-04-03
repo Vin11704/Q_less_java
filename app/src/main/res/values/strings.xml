@@ -14,4 +14,40 @@
     <string name="welcome_3_text">Receive instant notifications about order status,
                                 pickup times, and exclusive deals. Spend less time
                                 waiting and more time savoring delicious meals with Q-Less!</string>
+    <string name="add_request">Add your request...</string>
+
+    <!-- Strings for Restaurant 1 food list -->
+    <string name="store1_menu1_title">Signature McYouTwit Burger</string>
+    <string name="store1_menu1_description">Our signature burger featuring a juicy beef patty cooked to perfection, topped with melt…</string>
+    <string name="store1_menu1_price">$12.80</string>
+
+    <string name="store1_menu2_title">Signature McYouTwit Burger Combo</string>
+    <string name="store1_menu2_description">Our mouthwatering signature burger paired  with a refreshing drink of your choice.</string>
+    <string name="store1_menu2_price">$13.50</string>
+
+    <string name="store1_menu3_title">Double Signature Burger Bundle</string>
+    <string name="store1_menu3_description">Two mouthwatering signature burgers with your choice of sides. Perfect for sharing.</string>
+    <string name="store1_menu3_price">$24.90</string>
+
+    <string name="store1_menu4_title">Signature McYouTwit Fries in a Bucket</string>
+    <string name="store1_menu4_description">Golden and crunchy on the outside, fluffy on the inside, and seasoned to perfection...</string>
+    <string name="store1_menu4_price">$3.90</string>
+
+
+    <!-- Strings for Restaurant 1 Menu 1 -->
+    <string name="store1_menu1_full_description">Our signature burger featuring a juicy beef patty cooked to perfection, 
+                                                topped with melted cheddar cheese, crisp lettuce, ripe tomatoes, caramelized onions, 
+                                                and our secret special sauce, all sandwiched between a toasted brioche bun 
+                                                for an unforgettable taste sensation.</string>
+
+
+    <!-- Strings for Restaurant 2 - Malone's Cones-->
+    <string name="store2_name">Malone's Cones</string>
+    <string name="store2_rating">3.4</string>
+    <string name="store2_pick_up">Pick up in 11 minutes</string>
+    <string name="store2_distance">0.3km away</string>
+    <string name="store2_address">5 Changi Business Park Central 1, Singapore 489343</string>
+
+    <string name="store2_menu1_title">Special Super Scoop</string>
+
 </resources>
