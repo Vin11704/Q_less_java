@@ -29,36 +29,32 @@ public class FoodDetailActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Retrieve food details from the intent
+        // Retrieve planet details from the intent
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String foodName = extras.getString("food_name");
-            String foodDescLong = extras.getString("food_desc_long");
+            String foodDesc = extras.getString("food_desc");
             int foodImageResId = extras.getInt("food_image");
 
-            // Set food details to views
+            // Set planet details to views
             TextView foodNameTextView = findViewById(R.id.food_name_detail);
-            TextView foodDescTextView = findViewById(R.id.food_desc_long_detail);
+            TextView foodDescTextView = findViewById(R.id.food_desc_detail);
             ImageView foodImageView = findViewById(R.id.food_image_detail);
 
             foodNameTextView.setText(foodName);
-            foodDescTextView.setText(foodDescLong);
+            foodDescTextView.setText(foodDesc);
             foodImageView.setImageResource(foodImageResId);
         }
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar back button click here
-        if (item.getItemId() == android.R.id.home) {
-            String comment = ((TextInputEditText) findViewById(R.id.comment_text)).getText().toString();
-            Intent intent = new Intent();
-            intent.putExtra("comment", comment);
-            setResult(RESULT_OK, intent);
-            finish(); // Close the activity
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    public void onBackPressed() {
+        String comment = ((TextInputEditText) findViewById(R.id.comment_text)).getText().toString();
+        Intent intent = new Intent();
+        intent.putExtra("comment", comment);
+        setResult(RESULT_OK, intent);
+        super.onBackPressed(); // Close the activity
+        finish(); // Close the activity
     }
 
 }
