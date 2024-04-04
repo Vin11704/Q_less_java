@@ -42,7 +42,7 @@
 
 
     <!-- Strings for Restaurant 2 - Malone's Cones-->
-    <string name="store2_name">Malone's Cones</string>
+    <string name="store2_name">Malone\'s Cones</string>
     <string name="store2_rating">3.4</string>
     <string name="store2_pick_up">Pick up in 11 minutes</string>
     <string name="store2_distance">0.3km away</string>
