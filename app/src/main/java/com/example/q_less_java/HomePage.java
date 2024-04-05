@@ -19,6 +19,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
@@ -30,10 +31,12 @@ public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homepage);
 
         //Add fragment dynamically
-        SupportMapFragment mapFragment = SupportMapFragment.newInstance();
+        CameraPosition cam = new CameraPosition.Builder().target(new LatLng(1.3406,103.9632)).zoom(18).build();
+        SupportMapFragment mapFragment = SupportMapFragment.newInstance(new GoogleMapOptions().camera(cam));
+
         getSupportFragmentManager()
                 .beginTransaction()
                 .add(R.id.map, mapFragment)
@@ -45,14 +48,14 @@ public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
                 .rotateGesturesEnabled(false)
                 .tiltGesturesEnabled(false);
 
-        View homepage = getLayoutInflater().inflate(R.layout.activity_homepage, null);
-        Toolbar toolbar = homepage.findViewById(R.id.toolbar);
+//        View homepage = getLayoutInflater().inflate(R.layout.activity_homepage, null);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.q_less__color));
 
         // Populate list view with restaurant names
-        final SearchView searchView = homepage.findViewById(R.id.searchView);
-        restaurantRecyclerView = homepage.findViewById(R.id.restaurantRecyclerView);
+        final SearchView searchView = findViewById(R.id.searchView);
+        restaurantRecyclerView = findViewById(R.id.restaurantRecyclerView);
         restaurantRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new RestaurantAdapter(this, restaurantNames);
         restaurantRecyclerView.setAdapter(adapter); //creating views for each item in the data set.

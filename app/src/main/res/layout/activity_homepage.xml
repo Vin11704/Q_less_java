@@ -12,7 +12,8 @@
         android:background="@color/q_less__color"
         android:layout_alignParentTop="true"
         app:title="Food Ordering App"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     <SearchView
         android:id="@+id/searchView"
