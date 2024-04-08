@@ -66,7 +66,7 @@
 
     <!--Strings for Restaurant 2 Menu 1-->
     <string name="store2_menu1_full_description">Introducing our Special Super Matcha Scoop a creamy blend of premium matcha ice cream infused with Japanese ceremonial-grade matcha.
-                                                Topped with toasted coconut, fresh strawberries, and a drizzle of golden honey, it's a divine indulgence in every bite. Experience matcha magic like never before.</string>
+                                                Topped with toasted coconut, fresh strawberries, and a drizzle of golden honey, it\'s a divine indulgence in every bite. Experience matcha magic like never before.</string>
 
     <!--Strings for Restaurant 2 Menu 2-->
     <string name="store2_menu2_full_description">Indulge in the exquisite delight of our Caramel Honey Symphony,
@@ -83,7 +83,7 @@
     <!--Strings for Restaurant 2 Menu 4-->
     <string name="store2_menu4_full_description">Get ready to delight your taste buds with our Signature Brownie Chocolate Symphony!
                                                     Indulge in creamy chocolate ice cream swirled with chunks of our famous brownies.
-                                                    It's like a party in your mouth – rich, decadent, and oh-so-delicious! Don't miss out on this scrumptious treat.</string>
+                                                    It\'s like a party in your mouth – rich, decadent, and oh-so-delicious! Don\'t miss out on this scrumptious treat.</string>
 
 
 
@@ -151,7 +151,7 @@
         "flexibility of the material creates new affordances that supercede those in the physical "
         "world, without breaking the rules of physics.\n"
         "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "interact, and exist in space and in relation to each other. Rea  listic lighting shows "
         "seams, divides space, and indicates moving parts.\n\n"
 
         "Bold, graphic, intentional.\n\n"
