@@ -135,8 +135,6 @@
                                                     each cooked to perfection in our special sauces. Packed with fresh, high-quality ingredients,
                                                     this bowl is a carnivore\'s dream come true. Get ready for a meaty feast like no other!</string>
 
-    /////////////////////////////////////////////////
-
     <!-- String for Homepage -->
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_restaurant_info">RestaurantInfo</string>
@@ -151,7 +149,7 @@
         "flexibility of the material creates new affordances that supercede those in the physical "
         "world, without breaking the rules of physics.\n"
         "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Rea  listic lighting shows "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
         "seams, divides space, and indicates moving parts.\n\n"
 
         "Bold, graphic, intentional.\n\n"
