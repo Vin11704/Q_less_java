@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="16dp"
+    tools:context=".FoodDetailActivity">
+
+    <ImageButton
+        android:id="@+id/toolbar_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/back_icon"
+        android:contentDescription="back"
+        android:onClick="onBackPressed"/>
+
+    <ImageView
+        android:id="@+id/food_image_detail"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_marginBottom="16dp"
+        android:layout_height="0dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_marginBottom="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="3sp"
+                android:text="Description"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp" />
+            <TextView
+                android:id="@+id/food_name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/food_desc_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/comment_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:hint="Comments">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>

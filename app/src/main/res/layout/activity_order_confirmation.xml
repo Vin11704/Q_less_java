@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderConfirmation">
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/baseline_close_24_orange"
+        android:stateListAnimator="@null"
+        app:elevation="0dp"
+        android:contentDescription="Close"/>
+
+    <ImageView
+        android:id="@+id/done_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/close_button"
+        android:layout_centerInParent="true"
+        android:paddingTop="40dp"
+        android:src="@drawable/baseline_check_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/order_placed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="20dp"
+        android:layout_below="@id/done_pic"
+        android:text="Your Order Has Been Placed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID"
+        android:paddingTop="20dp"
+        android:paddingBottom="50dp"
+        android:layout_below = "@id/order_placed"
+        android:layout_centerInParent="true"/>
+    <View
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#666666"
+        android:layout_below="@id/order_id"/>
+
+    <TextView
+        android:id="@+id/pickup_time_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_id"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:text="Pick up time"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickup_time_title"
+        android:layout_centerInParent="true"
+        android:text="Thu,Mar 28, 4:15pm"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_time"
+        android:layout_centerInParent="true"
+        android:text="Pick up Location"
+        android:textSize="20sp"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_title"
+        android:layout_centerInParent="true"
+        android:text="LOCATION"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/order_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="Order Summary"
+        android:textColor="@color/q_less__color"
+        android:background="@drawable/rounded_button_order_summary"/>
+
+
+</RelativeLayout>

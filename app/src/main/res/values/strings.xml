@@ -1,6 +1,195 @@
 <resources>
-    <string name="app_name">Q_less_java</string>
-    <string name="login_android_layout_width">Login android:layout_width=</string>
-    <string name="login" />
-    <string name="register">Register</string>
+    <string name="app_name">Q_less</string>
+    <string name="q_less_string">Q-Less.</string>
+    <string name="asset_1">asset_1_3x_1</string>
+    <string name="welcome_1_head">Streamline your mealtime</string>
+    <string name="welcome_1_text">Say goodbye to long queues and waiting times.
+                                With Q-Less, you can order your favorite meals ahead
+                                of time and pick them up hassle-free.</string>
+    <string name="welcome_2_head">Order from anywhere</string>
+    <string name="welcome_2_text">Whether you\'re at home or on the go, our app lets
+                                you browse menus and schedule pickups at your convenience.
+                                Enjoy a seamless ordering experience every time.</string>
+    <string name="welcome_3_head">Real-time updates</string>
+    <string name="welcome_3_text">Receive instant notifications about order status,
+                                pickup times, and exclusive deals. Spend less time
+                                waiting and more time savoring delicious meals with Q-Less!</string>
+    <string name="add_request">Add your request...</string>
+
+    <!-- Strings for Restaurant 1 food list -->
+    <string name="store1_menu1_title">Signature McYouTwit Burger</string>
+    <string name="store1_menu1_description">Our signature burger featuring a juicy beef patty cooked to perfection, topped with melt…</string>
+    <string name="store1_menu1_price">$12.80</string>
+
+    <string name="store1_menu2_title">Signature McYouTwit Burger Combo</string>
+    <string name="store1_menu2_description">Our mouthwatering signature burger paired  with a refreshing drink of your choice.</string>
+    <string name="store1_menu2_price">$13.50</string>
+
+    <string name="store1_menu3_title">Double Signature Burger Bundle</string>
+    <string name="store1_menu3_description">Two mouthwatering signature burgers with your choice of sides. Perfect for sharing.</string>
+    <string name="store1_menu3_price">$24.90</string>
+
+    <string name="store1_menu4_title">Signature McYouTwit Fries in a Bucket</string>
+    <string name="store1_menu4_description">Golden and crunchy on the outside, fluffy on the inside, and seasoned to perfection...</string>
+    <string name="store1_menu4_price">$3.90</string>
+
+
+    <!-- Strings for Restaurant 1 Menu 1 -->
+    <string name="store1_menu1_full_description">Our signature burger featuring a juicy beef patty cooked to perfection, 
+                                                topped with melted cheddar cheese, crisp lettuce, ripe tomatoes, caramelized onions, 
+                                                and our secret special sauce, all sandwiched between a toasted brioche bun 
+                                                for an unforgettable taste sensation.</string>
+
+
+    <!-- Strings for Restaurant 2 - Malone's Cones-->
+    <string name="store2_name">Malone\'s Cones</string>
+    <string name="store2_rating">3.4</string>
+    <string name="store2_pick_up">Pick up in 11 minutes</string>
+    <string name="store2_distance">0.3km away</string>
+    <string name="store2_address">5 Changi Business Park Central 1, Singapore 489343</string>
+
+    <string name="store2_menu1_title">Special Super Matcha Scoop</string>
+    <string name="store2_menu1_description">A creamy blend of premium matcha ice cream infused with Japanese ceremonial-grade matcha.</string>
+    <string name="store2_menu1_price">$6.50</string>
+
+    <string name="store2_menu2_title">Honeyed Caramel Delight</string>
+    <string name="store2_menu2_description">Indulge in the decadent fusion of velvety caramel ice cream infused with the pure essence of natural honey.</string>
+    <string name="store2_menu2_price">$6.00</string>
+
+    <string name="store2_menu3_title">Berrylicious Blue Velvet Dream</string>
+    <string name="store2_menu3_description">Immerse yourself in a blissful journey as creamy blueberry-infused ice cream dances on your palate. </string>
+    <string name="store2_menu3_price">$6.00</string>
+
+    <string name="store2_menu4_title">Sigature Chocolate Brownie Sundae</string>
+    <string name="store2_menu4_description">It\'s like a party in your mouth – rich, decadent, and oh-so-delicious! Don\'t miss out on this scrumptious treat. </string>
+    <string name="store2_menu4_price">$12.50</string>
+
+    <!--Strings for Restaurant 2 Menu 1-->
+    <string name="store2_menu1_full_description">Introducing our Special Super Matcha Scoop a creamy blend of premium matcha ice cream infused with Japanese ceremonial-grade matcha.
+                                                Topped with toasted coconut, fresh strawberries, and a drizzle of golden honey, it\'s a divine indulgence in every bite. Experience matcha magic like never before.</string>
+
+    <!--Strings for Restaurant 2 Menu 2-->
+    <string name="store2_menu2_full_description">Indulge in the exquisite delight of our Caramel Honey Symphony,
+                                                a decadent fusion of velvety caramel ice cream infused with the pure essence of natural honey.
+                                                Each spoonful unveils a harmonious blend of rich caramel sweetness and delicate floral notes,
+                                                creating a symphony of flavors that dance on your palate. Treat yourself to a luxurious culinary
+                                                experience unlike any other.</string>
+
+    <!--Strings for Restaurant 2 Menu 3-->
+    <string name="store2_menu3_full_description">Immerse yourself in a blissful journey as creamy blueberry-infused ice cream dances on your palate.
+                                                With each scoop, experience the vibrant burst of ripe blueberries harmonizing with the luxurious velvet texture.
+                                                Indulge in this symphony of flavors for an unforgettable dessert experience.</string>
+
+    <!--Strings for Restaurant 2 Menu 4-->
+    <string name="store2_menu4_full_description">Get ready to delight your taste buds with our Signature Brownie Chocolate Symphony!
+                                                    Indulge in creamy chocolate ice cream swirled with chunks of our famous brownies.
+                                                    It\'s like a party in your mouth – rich, decadent, and oh-so-delicious! Don\'t miss out on this scrumptious treat.</string>
+
+
+
+    <!-- Strings for Restaurant 3 - Ah Huat Chicken Noodle-->
+    <string name="store3_name">Ah Huat Noodle Soup</string>
+    <string name="store3_rating">4.8</string>
+    <string name="store3_pick_up">Pick up in 9 minutes</string>
+    <string name="store3_distance">0.2km away</string>
+    <string name="store3_address">242 Simei Street 5, Singapore 544042</string>
+
+    <string name="store3_menu1_title">Signature Beef Noodle</string>
+    <string name="store3_menu1_description">Savor the warmth and flavor of our Signature Beef Noodle Soup. Tender beef, hearty vegetables, and fragrant broth...</string>
+    <string name="store3_menu1_price">$10.50</string>
+
+    <string name="store3_menu2_title">Mixed Seafood Rice Noodle</string>
+    <string name="store3_menu2_description">Each spoonful is a symphony of flavors, warming your soul with every slurp. A taste of seaside bliss in every bite.</string>
+    <string name="store3_menu2_price">$7.50</string>
+
+    <string name="store3_menu3_title">Duck Noodle Soup</string>
+    <string name="store3_menu3_description">Savor the warmth and flavor of our Duck Noodle Soup, featuring succulent roasted duck slices... </string>
+    <string name="store3_menu3_price">$7.00</string>
+
+    <string name="store3_menu4_title">Chicken Noodle</string>
+    <string name="store3_menu4_description">Savor the comforting warmth of our Chicken Noodle Soup. Tender chicken, slow-cooked overnight... </string>
+    <string name="store3_menu4_price">$7.20</string>
+
+    <string name="store3_menu5_title">Jumbo Meat Lover Bowl</string>
+    <string name="store3_menu5_description">Savor the ultimate carnivore\'s delight with our Jumbo Meat Lover Bowl! Overflowing with premium meats...</string>
+    <string name="store3_menu5_price">$10.50</string>
+
+    <!--Strings for Restaurant 3 Menu 1-->
+    <string name="store3_menu1_full_description">Savor the warmth and flavor of our Signature Beef Noodle Soup. Tender beef, hearty vegetables, and fragrant broth combine for a comforting bowl that\'s both satisfying and delicious.
+                                                It\'s a culinary masterpiece that will keep you coming back for more.</string>
+
+    <!--Strings for Restaurant 3 Menu 2-->
+    <string name="store3_menu2_full_description">Dive into a bowl of comfort with our Mixed Seafood Rice Noodle Soup! Savory broth brimming with an assortment of fresh seafood and tender rice noodles.
+                                                Each spoonful is a symphony of flavors, warming your soul with every slurp. A taste of seaside bliss in every bite.</string>
+
+    <!--Strings for Restaurant 3 Menu 3-->
+    <string name="store3_menu3_full_description">Savor the warmth and flavor of our Duck Noodle Soup, featuring succulent roasted duck slices atop a bed of tender noodles in a savory broth.</string>
+
+    <!--Strings for Restaurant 3 Menu 4-->
+    <string name="store3_menu4_full_description">Savor the comforting warmth of our Chicken Noodle Soup. Tender chicken, slow-cooked overnight,
+                                                infuses our rich broth with savory goodness. Delicately seasoned and paired with hearty noodles,
+                                                it\'s a bowlful of homemade comfort that will soothe your soul with every spoonful.</string>
+
+    <!--Strings for Restaurant 3 Menu 5-->
+    <string name="store3_menu5_full_description">Savor the ultimate carnivore\'s delight with our Jumbo Meat Lover Bowl! Overflowing with premium meats,
+                                                    each cooked to perfection in our special sauces. Packed with fresh, high-quality ingredients,
+                                                    this bowl is a carnivore\'s dream come true. Get ready for a meaty feast like no other!</string>
+
+    /////////////////////////////////////////////////
+
+    <!-- String for Homepage -->
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_restaurant_info">RestaurantInfo</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Rea  listic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+    </string>
+
 </resources>
