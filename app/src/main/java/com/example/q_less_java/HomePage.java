@@ -14,15 +14,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
-import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
+
+public class HomePage extends AppCompatActivity {
     private RecyclerView restaurantRecyclerView;
     private final String[] restaurantNames = {"Restaurant 1", "Restaurant 2", "Restaurant 3",
             "Restaurant 4", "Restaurant 5"};
@@ -47,8 +45,7 @@ public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
                 .compassEnabled(false)
                 .rotateGesturesEnabled(false)
                 .tiltGesturesEnabled(false);
-
-//        View homepage = getLayoutInflater().inflate(R.layout.activity_homepage, null);
+        
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.q_less__color));
@@ -86,16 +83,6 @@ public class HomePage extends AppCompatActivity implements OnMapReadyCallback{
             }
 
         });
-    }
-
-    // Get a handle to the GoogleMap object and display marker.
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        LatLng sg = new LatLng(1.3521, 103.8198);
-        googleMap.addMarker(new MarkerOptions()
-                .position(sg).title("Marker in Singapore"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sg));
-        googleMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
     // Inflate menu options

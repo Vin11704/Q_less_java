@@ -18,13 +18,12 @@ public class welcome_page_3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_page3);
         next_button = findViewById(R.id.next_button);
-        // TODO 1: wait for signup page
-        /*next_button.setOnClickListener(new View.OnClickListener(){
+        next_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(welcome_page_3.this, [signup page name].class);
+                Intent intent = new Intent(welcome_page_3.this, HomePage.class);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 }
