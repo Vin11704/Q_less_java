@@ -43,86 +43,65 @@ public class Login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!validateEmail() | validatePassword()) {
-
-            }else{
-                    checkuser();
+                if (!validateEmail() || !validatePassword()) {
+                    // Do nothing if validation fails
+                } else {
+                    loginUser();
                 }
-
-                }
+            }
         });
-signupRedirectText.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        Intent intent = new Intent(Login.this, Registration.class);
-        startActivity(intent);
-    }
-});
+
+        signupRedirectText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Registration.class);
+                startActivity(intent);
+            }
+        });
     }
 
-    public Boolean validateEmail(){
+    public Boolean validateEmail() {
         String val = loginEmail.getText().toString();
-        if(val.isEmpty()) {
-            loginEmail.setError("Access denied:Email can't be empty)");
+        if (val.isEmpty()) {
+            loginEmail.setError("Access denied: Email can't be empty");
             return false;
-        }else {
+        } else {
             loginEmail.setError(null);
             return true;
         }
-        }
+    }
 
-
-    public Boolean validatePassword(){
+    public Boolean validatePassword() {
         String val = loginPassword.getText().toString();
-        if(val.isEmpty()) {
-            loginPassword.setError("Privacy is important!password cannot be empty!");
+        if (val.isEmpty()) {
+            loginPassword.setError("Privacy is important! Password cannot be empty");
             return false;
-        }else {
+        } else {
             loginPassword.setError(null);
             return true;
         }
     }
 
-
-    public void checkuser(){
-    String userEmail = loginEmail.getText().toString().trim();
+    public void loginUser() {
+        String userEmail = loginEmail.getText().toString().trim();
         String userPassword = loginPassword.getText().toString().trim();
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
-        Query checkUserDatabase = reference.orderByChild("username").equalTo(userEmail);
-
-        checkUserDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists()) {
-                    loginEmail.setError(null);
-                    String passwordfromDB = snapshot.child(userEmail).child("Password").getValue(String.class);
-                    if (!Objects.equals(passwordfromDB, userPassword)) {
-                        loginEmail.setError(null);
-                        Intent intent = new Intent(Login.this, MainActivity.class);
-                    } else {
-                        loginPassword.setError("Invalid Credentials");
-                        loginPassword.requestFocus();
+        auth.signInWithEmailAndPassword(userEmail, userPassword)
+                .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                    @Override
+                    public void onSuccess(AuthResult authResult) {
+                        // Login successful, navigate to welcome page
+                        Intent intent = new Intent(Login.this, welcome_page.class);
+                        startActivity(intent);
+                        finish(); // Close the login activity to prevent user from navigating back
                     }
-                } else {
-                    loginEmail.setError("User does not Exist");
-                    loginEmail.requestFocus();
-
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-
-
-            }
-        });
-
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // Login failed, display error message
+                        Toast.makeText(Login.this, "Login failed. " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 }
-
-
-
-
-
