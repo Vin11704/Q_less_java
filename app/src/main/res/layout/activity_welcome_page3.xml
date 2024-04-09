@@ -23,6 +23,7 @@
             android:text="@string/q_less_string"
             android:textColor="@color/q_less__color"
             android:textSize="36sp"
+            android:textStyle="bold"
             app:drawableBottomCompat="@drawable/asset_3_3x_1" />
 
         <TextView
