@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/my_primary"
+        android:background="#A817B3"
         android:alpha="0.7" />
 
     <LinearLayout
@@ -30,7 +30,7 @@
             android:textStyle="bold"
             android:fontFamily="sans-serif-medium"
             android:textSize="32sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/lavender" />
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -49,8 +49,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome"
-                android:textColor="@color/my_primary"
+                android:text="Welcome!"
+                android:textColor="@color/lavender"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/emailEditText"
+                android:id="@+id/registration_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -90,7 +90,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/registration_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
