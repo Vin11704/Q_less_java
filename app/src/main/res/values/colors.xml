@@ -6,4 +6,6 @@
     <color name="gray">#C0C0C0</color>
     <color name = "lavender" >#9E2DCD</color>
     <color name = "pink" >#E83D74</color>
+    <color name = "my_primary" >#122C61</color>
+    <color name = "my_secondary" >#2C2F4A</color>
 </resources>
