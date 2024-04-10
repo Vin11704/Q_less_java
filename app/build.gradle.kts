@@ -1,11 +1,3 @@
-
-
-import org.gradle.api.initialization.dsl.ScriptHandler
-repositories {
-    google() // Make sure Google repository is declared here
-    // other repositories if needed
-}
-
 plugins {
     id("com.android.application")
     id("com.google.gms.google-services")
