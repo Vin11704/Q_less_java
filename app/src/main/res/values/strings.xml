@@ -17,7 +17,18 @@
     <string name="next">Next</string>
     <string name="add_request">Add your request...</string>
 
+    <!-- Content Labels for interactive view -->
+    <string name="filter_bar">Scrollable filter bar</string>
+
     <!-- Strings for Restaurant 1 food list -->
+    <string name="store1_name">McYouTwit Burgers and Fries</string>
+    <string name="store1_short_details">4.3 (102) | Western | 0.2km away</string>
+    <string name="store1_rating">4.3</string>
+    <string name="store1_rater">102</string>
+    <string name="store1_pick_up">Pick up in 11 minutes</string>
+    <string name="store1_distance">0.3km away</string>
+    <string name="store1_address">5 Changi Business Park Central 1, Singapore 489343</string>
+
     <string name="store1_menu1_title">Signature McYouTwit Burger</string>
     <string name="store1_menu1_description">Our signature burger featuring a juicy beef patty cooked to perfection, topped with melt…</string>
     <string name="store1_menu1_price">$12.80</string>
@@ -36,14 +47,15 @@
 
 
     <!-- Strings for Restaurant 1 Menu 1 -->
-    <string name="store1_menu1_full_description">Our signature burger featuring a juicy beef patty cooked to perfection, 
-                                                topped with melted cheddar cheese, crisp lettuce, ripe tomatoes, caramelized onions, 
-                                                and our secret special sauce, all sandwiched between a toasted brioche bun 
+    <string name="store1_menu1_full_description">Our signature burger featuring a juicy beef patty cooked to perfection,
+                                                topped with melted cheddar cheese, crisp lettuce, ripe tomatoes, caramelized onions,
+                                                and our secret special sauce, all sandwiched between a toasted brioche bun
                                                 for an unforgettable taste sensation.</string>
 
 
     <!-- Strings for Restaurant 2 - Malone's Cones-->
     <string name="store2_name">Malone\'s Cones</string>
+    <string name="store2_short_details">3.4 (53) | Dessert | 0.3km away</string>
     <string name="store2_rating">3.4</string>
     <string name="store2_pick_up">Pick up in 11 minutes</string>
     <string name="store2_distance">0.3km away</string>
@@ -54,7 +66,7 @@
     <string name="store2_menu1_price">$6.50</string>
 
     <string name="store2_menu2_title">Honeyed Caramel Delight</string>
-    <string name="store2_menu2_description">Indulge in the decadent fusion of velvety caramel ice cream infused with the pure essence of natural honey.</string>
+    <string name="store2_menu2_description">Indulge in the decadent fusion of velvety caramel ice cream infused with the pure essence of...</string>
     <string name="store2_menu2_price">$6.00</string>
 
     <string name="store2_menu3_title">Berrylicious Blue Velvet Dream</string>
@@ -89,17 +101,18 @@
 
     <!-- Strings for Restaurant 3 - Ah Huat Chicken Noodle-->
     <string name="store3_name">Ah Huat Noodle Soup</string>
+    <string name="store3_short_details">4.5 (2k+) | Chinese | 0.2km away</string>
     <string name="store3_rating">4.8</string>
     <string name="store3_pick_up">Pick up in 9 minutes</string>
     <string name="store3_distance">0.2km away</string>
     <string name="store3_address">242 Simei Street 5, Singapore 544042</string>
 
     <string name="store3_menu1_title">Signature Beef Noodle</string>
-    <string name="store3_menu1_description">Savor the warmth and flavor of our Signature Beef Noodle Soup. Tender beef, hearty vegetables, and fragrant broth...</string>
+    <string name="store3_menu1_description">Savor the warmth and flavor of our Signature Beef Noodle Soup. Tender beef, hearty vegetables, and...</string>
     <string name="store3_menu1_price">$10.50</string>
 
     <string name="store3_menu2_title">Mixed Seafood Rice Noodle</string>
-    <string name="store3_menu2_description">Each spoonful is a symphony of flavors, warming your soul with every slurp. A taste of seaside bliss in every bite.</string>
+    <string name="store3_menu2_description">Each spoonful is a symphony of flavors, warming your soul with every slurp. A taste of seaside...</string>
     <string name="store3_menu2_price">$7.50</string>
 
     <string name="store3_menu3_title">Duck Noodle Soup</string>
