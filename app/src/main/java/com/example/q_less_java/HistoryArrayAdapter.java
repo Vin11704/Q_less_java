@@ -1,12 +1,16 @@
 package com.example.q_less_java;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -27,13 +31,19 @@ public class HistoryArrayAdapter extends ArrayAdapter<String> {
         }
 
         // Get references to the TextView and ImageButton
-        TextView textView = convertView.findViewById(R.id.history_text);
+        //TextView textView = convertView.findViewById(R.id.history_text);
         ImageButton removeButton = convertView.findViewById(R.id.remove_button);
+        Button itemButton = convertView.findViewById(R.id.history_text);
 
         // Set the text for the TextView to the history item's text
         String item = getItem(position);
         Log.d("Position", item);
-        textView.setText(item);
+        itemButton.setText(item);
+
+        itemButton.setOnClickListener(v ->{
+            Intent intent = new Intent(getContext(), restaurant_list.class);
+            getContext().startActivity(intent);
+        });
 
         // Set the click listener for the remove button
         removeButton.setOnClickListener(v -> {
