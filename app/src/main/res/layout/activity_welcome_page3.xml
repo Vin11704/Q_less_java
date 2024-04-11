@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcome_page_3">
+
     <LinearLayout
         android:id="@+id/linearLayout_welcome_3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/welcome_img_3"
@@ -20,57 +18,75 @@
             android:layout_gravity="center_horizontal|center"
             android:fontFamily="@font/bitter"
             android:gravity="center"
+            android:padding="5dp"
             android:text="@string/q_less_string"
             android:textColor="@color/q_less__color"
             android:textSize="36sp"
-            android:textStyle="bold"
-            app:drawableBottomCompat="@drawable/asset_3_3x_1" />
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="50dp"
+                android:src="@drawable/asset_3_3x_1"/>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/welcome_3_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
-            android:alpha="0.5"
-            android:fontFamily="@font/source_sans_pro_light"
-
+            android:layout_gravity="center"
+            android:fontFamily="@font/source_sans_pro"
             android:gravity="center"
-            android:paddingTop="15dp"
+            android:paddingTop="30dp"
             android:text="@string/welcome_3_head"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/welcome_3_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
+            android:layout_gravity="center"
             android:fontFamily="@font/roboto"
             android:gravity="center"
             android:paddingTop="10dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="@string/welcome_3_text"
-            android:textSize="18sp" />
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp"
+        android:paddingHorizontal="20dp">
 
         <ImageView
             android:id="@+id/pagination_3"
             android:src="@drawable/pagination_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="50dp"/>
 
         <Button
             android:id="@+id/next_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next"
-            android:textColor="@color/q_less__color"
-            android:textSize="20dp"
+            android:text="@string/lets_go"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textAllCaps="false"
-            android:background="@drawable/next_button"/>
-
+            android:background="@drawable/rounded_button"/>
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
