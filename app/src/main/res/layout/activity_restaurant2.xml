@@ -8,12 +8,11 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -22,10 +21,11 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="260dp"/>
+                    android:layout_height="260dp" />
 
                 <!-- Menu 1-->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/store2_menu1"
                     android:layout_width="match_parent"
                     android:layout_height="124dp"
                     android:layout_margin="10dp"
@@ -42,7 +42,7 @@
                         android:src="@drawable/store2_menu1" />
 
                     <TextView
-                        android:id="@+id/store1_menu1_title"
+                        android:id="@+id/menu_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
@@ -69,7 +69,7 @@
                         android:id="@+id/add_to_chart_21"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="350dp"
+                        android:layout_marginLeft="330dp"
                         android:layout_marginTop="90dp"
                         app:srcCompat="@drawable/add_to_cart" />
 
@@ -77,6 +77,7 @@
 
                 <!-- Menu 2-->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/store2_menu2"
                     android:layout_width="match_parent"
                     android:layout_height="124dp"
                     android:layout_margin="10dp"
@@ -88,7 +89,7 @@
                         android:id="@+id/add_to_chart_22"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="350dp"
+                        android:layout_marginLeft="330dp"
                         android:layout_marginTop="90dp"
                         app:srcCompat="@drawable/add_to_cart" />
 
@@ -129,6 +130,7 @@
 
                 <!-- Menu 3-->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/store2_menu3"
                     android:layout_width="match_parent"
                     android:layout_height="124dp"
                     android:layout_margin="10dp"
@@ -140,7 +142,7 @@
                         android:id="@+id/add_to_chart_23"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="350dp"
+                        android:layout_marginLeft="330dp"
                         android:layout_marginTop="90dp"
                         app:srcCompat="@drawable/add_to_cart" />
 
@@ -151,7 +153,7 @@
                         android:layout_margin="5dp"
                         android:background="@color/white"
                         android:elevation="3dp"
-                        android:src="@drawable/store2_menu3"/>
+                        android:src="@drawable/store2_menu3" />
 
                     <TextView
                         android:id="@+id/store2_menu3_title"
@@ -181,6 +183,7 @@
 
                 <!-- Menu 4-->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/store2_menu4"
                     android:layout_width="match_parent"
                     android:layout_height="124dp"
                     android:layout_margin="10dp"
@@ -192,7 +195,7 @@
                         android:id="@+id/add_to_chart_24"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_marginLeft="350dp"
+                        android:layout_marginLeft="330dp"
                         android:layout_marginTop="90dp"
                         app:srcCompat="@drawable/add_to_cart" />
 
@@ -236,14 +239,12 @@
                     android:layout_height="80dp" />
 
             </LinearLayout>
-
         </ScrollView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="265dp"
-            android:background="@color/white"
-            >
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/store2_arrow"
@@ -378,60 +379,51 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:layout_alignParentBottom="true"
-            android:backgroundTint="@android:color/transparent"
-            >
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/q_less__color"
+            android:visibility="visible"
+            app:cardCornerRadius="10dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="400dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="30dp"
-                android:backgroundTint="@color/q_less__color"
-                app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="View Cart"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="81dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="View Cart"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
+            <TextView
+                android:id="@+id/current_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="85dp"
+                android:paddingTop="20dp"
+                android:text="(X item)"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                </TextView>
+            <TextView
+                android:id="@+id/total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="310dp"
+                android:paddingTop="20dp"
+                android:text="$XX.XX"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="70dp"
-                    android:text="(X items)"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
+        </androidx.cardview.widget.CardView>
 
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="right|center_vertical"
-                    android:paddingRight="20dp"
-                    android:text="$ XX.XX"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-            </androidx.cardview.widget.CardView>
-        </com.google.android.material.card.MaterialCardView>
     </RelativeLayout>
 
 
