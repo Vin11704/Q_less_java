@@ -4,4 +4,6 @@
     <color name="white">#FFFFFF</color>
     <color name="q_less__color">#FF670E</color>
     <color name="gray">#C0C0C0</color>
+    <color name = "lavender" >#9E2DCD</color>
+    <color name = "pink" >#E83D74</color>
 </resources>
