@@ -246,15 +246,16 @@
             android:layout_height="265dp"
             android:background="@color/white">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/store2_arrow"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:layout_marginTop="3dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="DuplicateIds" />
+                android:contentDescription="BACK" />
 
             <ImageView
                 android:id="@+id/store2_search"
@@ -277,6 +278,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store2_fav"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -286,6 +288,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store2_duration"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -295,6 +298,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store2_pickup"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -304,6 +308,7 @@
                 app:srcCompat="@drawable/pickup" />
 
             <ImageView
+                android:id="@+id/store2_location"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -313,6 +318,7 @@
                 app:srcCompat="@drawable/location" />
 
             <TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="112dp"
@@ -324,6 +330,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store2_fav_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -335,6 +342,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store2_duration_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -346,6 +354,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store2_pickup_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -357,6 +366,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store2_location_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -368,6 +378,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store2_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"

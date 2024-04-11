@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Registration extends AppCompatActivity {
 
 
-    EditText signnupName, signupEmail, signupUsername, signupPassword;
+    EditText signupName, signupEmail, signupUsername, signupPassword;
     TextView loginRedirectText;
     Button SignupButton;
 
@@ -33,7 +33,7 @@ public class Registration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        signnupName = findViewById(R.id.registration_name);
+        signupName = findViewById(R.id.registration_name);
         signupUsername = findViewById(R.id.registration_email);
         signupPassword = findViewById(R.id.registration_password);
         SignupButton = findViewById(R.id.signup_button);
@@ -44,7 +44,7 @@ public class Registration extends AppCompatActivity {
             public void onClick(View view) {
                 database = FirebaseDatabase.getInstance();
                 reference = database.getReference("users");
-                String name = signnupName.getText().toString();
+                String name = signupName.getText().toString();
                 String email = signupEmail.getText().toString();
                 String username = signupUsername.getText().toString();
                 String Password = signupPassword.getText().toString();

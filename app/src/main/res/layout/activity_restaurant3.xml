@@ -290,27 +290,26 @@
                     android:layout_height="80dp" />
 
             </LinearLayout>
-
         </ScrollView>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="265dp"
-            android:background="@color/white"
-            >
+            android:background="@color/white">
 
-            <ImageView
-                android:id="@+id/store2_arrow"
-                android:layout_width="70dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/arrow"
+            <ImageButton
+                android:id="@+id/store3_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/baseline_arrow_back_24"
+                android:layout_marginTop="3dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="DuplicateIds" />
+                android:contentDescription="BACK" />
 
             <ImageView
-                android:id="@+id/store2_search"
+                android:id="@+id/store3_search"
                 android:layout_width="77dp"
                 android:layout_height="51dp"
                 android:layout_marginTop="3dp"
@@ -320,7 +319,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/store2_profile"
+                android:id="@+id/store3_profile"
                 android:layout_width="84dp"
                 android:layout_height="91dp"
                 android:layout_marginStart="16dp"
@@ -330,6 +329,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store3_fav"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -339,6 +339,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store3_duration"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -348,6 +349,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/store3_pickup"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -357,6 +359,7 @@
                 app:srcCompat="@drawable/pickup" />
 
             <ImageView
+                android:id="@+id/store3_location"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
@@ -366,6 +369,7 @@
                 app:srcCompat="@drawable/location" />
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="112dp"
@@ -377,6 +381,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store3_fav_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -388,6 +393,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store3_duration_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -399,6 +405,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store3_pickup_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -410,6 +417,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store3_location_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
@@ -421,6 +429,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/store3_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
@@ -433,60 +442,49 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="60dp"
             android:layout_alignParentBottom="true"
-            android:backgroundTint="@android:color/transparent"
-            >
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/q_less__color"
+            android:visibility="visible"
+            app:cardCornerRadius="10dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="400dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="30dp"
-                android:backgroundTint="@color/q_less__color"
-                app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:text="View Cart"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="81dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="10dp"
-                    android:text="View Cart"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
+            <TextView
+                android:id="@+id/current_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="85dp"
+                android:paddingTop="20dp"
+                android:text="(X item)"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                </TextView>
+            <TextView
+                android:id="@+id/total_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="310dp"
+                android:paddingTop="20dp"
+                android:text="$XX.XX"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="70dp"
-                    android:text="(X items)"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="right|center_vertical"
-                    android:paddingRight="20dp"
-                    android:text="$ XX.XX"
-                    android:textColor="@color/white"
-                    android:textSize="12sp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-            </androidx.cardview.widget.CardView>
-        </com.google.android.material.card.MaterialCardView>
+        </androidx.cardview.widget.CardView>
     </RelativeLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
