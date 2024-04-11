@@ -14,6 +14,7 @@
     <string name="welcome_3_text">Receive instant notifications about order status,
                                 pickup times, and exclusive deals. Spend less time
                                 waiting and more time savoring delicious meals with Q-Less!</string>
+    <string name="next">Next</string>
     <string name="add_request">Add your request...</string>
 
     <!-- Strings for Restaurant 1 food list -->

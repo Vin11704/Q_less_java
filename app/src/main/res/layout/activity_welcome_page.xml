@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".welcome_page">
 
-
     <LinearLayout
         android:id="@+id/linearLayout_welcome_1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-47dp"
-        tools:layout_editor_absoluteY="-16dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/welcome_img_1"
@@ -26,8 +22,21 @@
             android:text="@string/q_less_string"
             android:textColor="@color/q_less__color"
             android:textSize="36sp"
-            android:textStyle="bold"
-            app:drawableBottomCompat="@drawable/asset_1_3x_1" />
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:paddingTop="50dp"
+                android:src="@drawable/asset_1_3x_1"/>
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/welcome_1_head"
@@ -36,45 +45,51 @@
             android:layout_gravity="center_horizontal|center"
             android:alpha="0.5"
             android:fontFamily="@font/source_sans_pro_light"
-
             android:gravity="center"
             android:paddingTop="30dp"
             android:text="@string/welcome_1_head"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/welcome_1_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
+            android:layout_gravity="center_horizontal"
             android:fontFamily="@font/roboto"
             android:gravity="center"
-            android:paddingLeft="30dp"
             android:paddingTop="10dp"
+            android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:text="@string/welcome_1_text"
-            android:textSize="18sp" />
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp">
 
         <ImageView
             android:id="@+id/pagination_1"
+            android:src="@drawable/pagination_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:src="@drawable/pagination_1" />
+            android:layout_marginTop="50dp"/>
 
         <Button
             android:id="@+id/next_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/next_button"
-            android:text="Next"
-            android:textAllCaps="false"
+            android:text="@string/next"
             android:textColor="@color/q_less__color"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/next_button"/>
 
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
