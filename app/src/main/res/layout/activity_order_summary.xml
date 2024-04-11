@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderSummary">
+    <TextView
+        android:id="@+id/text_order_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="20dp"/>
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24_orange"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:contentDescription="close"/>
+    <ImageView
+        android:id = "@+id/bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_shopping_bag_24"
+        android:layout_below="@id/text_order_summary"
+        android:layout_marginStart="2dp"/>
+    <ImageView
+        android:id = "@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bag"
+        android:src="@drawable/baseline_access_time_24"
+        android:paddingTop="5dp"
+        android:layout_marginStart="2dp"/>
+    <ImageView
+        android:id ="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clock"
+        android:src= "@drawable/outline_location_on_24"
+        android:paddingTop="5dp"
+        android:layout_marginStart="2dp"/>
+
+    <View
+        android:id = "@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/location"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="101dp"
+        android:background="#666666" />
+    <View
+        android:id = "@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/line"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="101dp"
+        android:background="#666666" />
+    <TextView
+        android:id ="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal"
+        android:layout_below="@+id/line_1"
+        android:paddingTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id ="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_1"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"/>
+    <TextView
+        android:id = "@+id/service_fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Fee"
+        android:layout_below="@+id/subtotal"
+        android:paddingTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id = "@+id/service_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/value"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp" />
+    <TextView
+        android:id = "@+id/totalorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Order"
+        android:textStyle="bold"
+        android:layout_below="@id/service_fee"
+        android:paddingTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/service_value"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        style="@style/button"
+        android:background="@drawable/rounded_button"
+        android:padding="20dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+</RelativeLayout>

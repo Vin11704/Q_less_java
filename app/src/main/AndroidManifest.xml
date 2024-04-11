@@ -15,78 +15,71 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light"
         tools:targetApi="31">
-
+        <activity
+            android:name=".OrderSummary"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
         <activity
             android:name=".welcome_page"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".Registration"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".welcome_page_2"
             android:exported="false" />
-
         <activity
             android:name=".welcome_page_3"
             android:exported="false" />
-
         <activity
             android:name=".HomePage"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Search"
-            android:exported="false"
-            />
-
+            android:exported="false" />
         <activity
             android:name=".RestaurantInfo"
             android:exported="false"
             android:label="@string/title_activity_restaurant_info" />
-
         <activity
-            android:name="RestaurantAdapter"
-            android:exported="false"/>
-
+            android:name=".RestaurantAdapter"
+            android:exported="false" />
         <activity
             android:name=".FoodDetailActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".FoodDetailMainActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".OrderConfirmation"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".restaurant_list"
             android:exported="false" />
