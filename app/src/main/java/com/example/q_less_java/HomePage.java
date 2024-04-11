@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.SearchView;
 import android.widget.Toast;
 
@@ -22,9 +23,9 @@ import com.google.android.gms.maps.model.LatLng;
 
 public class HomePage extends AppCompatActivity {
     private RecyclerView restaurantRecyclerView;
-    private final String[] restaurantNames = {"Restaurant 1", "Restaurant 2", "Restaurant 3",
-            "Restaurant 4", "Restaurant 5"};
+    private final String[] restaurantNames = {"McYouTwit Burgers and Fries", "Malone's Cone", "Ah Huat Chicken Rice Noodle"};
     private RestaurantAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,15 +60,27 @@ public class HomePage extends AppCompatActivity {
 
         // Set item click listener to be notified when an item in the RecyclerView is clicked
         //RestaurantAdapter class defines this interface
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchIntent = new Intent(HomePage.this, Search.class);
+                startActivity(searchIntent);
+            }
+        });
         adapter.setOnItemClickListener(new RestaurantAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(String selectedRestaurant) {
                 // You can navigate to the restaurant details activity or perform any other action here
                 Toast.makeText(HomePage.this, "Selected restaurant: " + selectedRestaurant, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(HomePage .this, RestaurantInfo.class);
+                Intent intent = new Intent(HomePage.this, RestaurantInfo.class);
                 intent.putExtra("info", selectedRestaurant);
                 startActivity(intent);
-            }
+              //  if (selectedRestaurant.equals("McYouTwit Burgers and Fries")) {
+                   //Intent intent = new Intent(HomePage.this, restaurant1.class);
+                  //  intent.putExtra("info", selectedRestaurant);
+                  //  startActivity(intent);
+              //  }
+                }
         });
 
         // Setup search functionality
