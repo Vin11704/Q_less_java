@@ -39,7 +39,7 @@
             android:layout_width="414dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center"
-            android:fontFamily="@font/source_sans_pro_light"
+            android:fontFamily="@font/source_sans_pro"
             android:gravity="left"
             android:paddingLeft="30dp"
             android:paddingTop="30dp"
@@ -95,7 +95,7 @@
                 android:text="Add To Cart"
                 android:textAllCaps="false"
                 android:textColor="@color/q_less__color"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

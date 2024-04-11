@@ -42,9 +42,8 @@
             android:id="@+id/welcome_1_head"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
-            android:alpha="0.5"
-            android:fontFamily="@font/source_sans_pro_light"
+            android:layout_gravity="center"
+            android:fontFamily="@font/source_sans_pro"
             android:gravity="center"
             android:paddingTop="30dp"
             android:text="@string/welcome_1_head"
@@ -55,14 +54,14 @@
             android:id="@+id/welcome_1_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center"
             android:fontFamily="@font/roboto"
             android:gravity="center"
             android:paddingTop="10dp"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
             android:text="@string/welcome_1_text"
-            android:textSize="18sp"/>
+            android:textSize="16sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -71,7 +70,8 @@
         android:orientation="vertical"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:paddingBottom="30dp">
+        android:paddingBottom="30dp"
+        android:paddingHorizontal="20dp">
 
         <ImageView
             android:id="@+id/pagination_1"
