@@ -50,9 +50,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name=".welcome_page_2"
             android:exported="false" />
         <activity
