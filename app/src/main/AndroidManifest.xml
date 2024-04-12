@@ -97,7 +97,6 @@
             android:name=".restaurant1_menu1"
             android:exported="true" />
 
-        <!-- restaurant2 and 3 is building -->
         <activity
             android:name=".restaurant2"
             android:exported="true" />
