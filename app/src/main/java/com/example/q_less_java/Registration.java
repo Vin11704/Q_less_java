@@ -38,6 +38,8 @@ public class Registration extends AppCompatActivity {
         signupPassword = findViewById(R.id.registration_password);
         SignupButton = findViewById(R.id.signup_button);
         loginRedirectText = findViewById(R.id.loginRedirectText);
+        signupEmail = findViewById(R.id.registration_email);
+
 
         SignupButton.setOnClickListener(new View.OnClickListener() {
             @Override

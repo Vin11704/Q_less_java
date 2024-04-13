@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,10 +22,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.core.Tag;
 
 import java.util.Objects;
 
 public class Login extends AppCompatActivity {
+    private static final String TAG = "LoginActivity";
     private FirebaseAuth auth;
     private EditText loginEmail, loginPassword;
     private TextView signupRedirectText;
@@ -103,5 +106,38 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Login failed. " + e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
-    }
-}
+
+
+        final String emailToCheck = "email_to_check@gmail.com"; // The email you want to check
+        DatabaseReference usersRef = FirebaseDatabase.getInstance().getReference().child("users");
+
+        usersRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    for (DataSnapshot userSnapshot : dataSnapshot.getChildren()) {
+                        helperclass user = userSnapshot.getValue(helperclass.class);
+                        if (user != null && user.getEmail().equals(emailToCheck)) {
+                            // Email exists in the database
+                            // Handle the case when the email exists
+                            Log.d(TAG, "Email exists");
+                            return;
+                        }
+                    }
+
+                    // Email does not exist in the database
+                    // Handle the case when the email does not exist
+                    Log.d(TAG, "Email does not exist");
+                } else {
+                    // Handle the case when there are no users in the database
+                    Log.d(TAG, "No users found");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                // Handle errors
+                Log.e(TAG, "Error fetching data", databaseError.toException());
+            }
+        });
+    }}
