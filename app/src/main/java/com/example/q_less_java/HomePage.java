@@ -72,15 +72,22 @@ public class HomePage extends AppCompatActivity {
             public void onItemClick(String selectedRestaurant) {
                 // You can navigate to the restaurant details activity or perform any other action here
                 Toast.makeText(HomePage.this, "Selected restaurant: " + selectedRestaurant, Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(HomePage.this, RestaurantInfo.class);
-                intent.putExtra("info", selectedRestaurant);
-                startActivity(intent);
-              //  if (selectedRestaurant.equals("McYouTwit Burgers and Fries")) {
-                   //Intent intent = new Intent(HomePage.this, restaurant1.class);
-                  //  intent.putExtra("info", selectedRestaurant);
-                  //  startActivity(intent);
-              //  }
+
+                // Determine which restaurant was clicked based on its name
+                if (selectedRestaurant.equals(restaurantNames[0])) {
+                    // Launch activity for restaurant1
+                    Intent intent = new Intent(HomePage.this, restaurant1.class);
+                    startActivity(intent);
+                } else if (selectedRestaurant.equals(restaurantNames[1])) {
+                    // Launch activity for restaurant2
+                    Intent intent = new Intent(HomePage.this, restaurant2.class);
+                    startActivity(intent);
+                } else if (selectedRestaurant.equals(restaurantNames[2])) {
+                    // Launch activity for restaurant3
+                    Intent intent = new Intent(HomePage.this, restaurant3.class);
+                    startActivity(intent);
                 }
+            }
         });
 
         // Setup search functionality
