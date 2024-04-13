@@ -2,30 +2,24 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="OrderConfirmation">
+      <entry key="Login">
         <State />
       </entry>
       <entry key="app">
         <State>
-          <targetSelectedWithDropDown>
+          <runningDeviceTargetSelectedWithDropDown>
             <Target>
-              <type value="QUICK_BOOT_TARGET" />
+              <type value="RUNNING_DEVICE_TARGET" />
               <deviceKey>
                 <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\Admin\.android\avd\Samsung_Galaxy_A52s_API_34.avd" />
+                  <type value="SERIAL_NUMBER" />
+                  <value value="RWRWCQS8AUEAMBJ7" />
                 </Key>
               </deviceKey>
             </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-12T12:21:32.896967800Z" />
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-13T02:08:08.129913800Z" />
         </State>
-      </entry>
-      <entry key="restaurant3">
-        <State />
-      </entry>
-      <entry key="restaurant_list">
-        <State />
       </entry>
     </value>
   </component>
