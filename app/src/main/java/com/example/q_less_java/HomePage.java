@@ -24,6 +24,8 @@ import com.google.android.gms.maps.model.LatLng;
 public class HomePage extends AppCompatActivity {
     private RecyclerView restaurantRecyclerView;
     private final String[] restaurantNames = {"McYouTwit Burgers and Fries", "Malone's Cone", "Ah Huat Chicken Rice Noodle"};
+    private final int[] profiles = {R.drawable.store1_burger, R.drawable.store2_ice_cream,
+            R.drawable.store3_rice_noodle};
     private RestaurantAdapter adapter;
 
 
@@ -55,7 +57,7 @@ public class HomePage extends AppCompatActivity {
         final SearchView searchView = findViewById(R.id.searchView);
         restaurantRecyclerView = findViewById(R.id.restaurantRecyclerView);
         restaurantRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new RestaurantAdapter(this, restaurantNames);
+        adapter = new RestaurantAdapter(this, restaurantNames, profiles);
         restaurantRecyclerView.setAdapter(adapter); //creating views for each item in the data set.
 
         // Set item click listener to be notified when an item in the RecyclerView is clicked

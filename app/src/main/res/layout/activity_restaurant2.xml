@@ -348,7 +348,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="172dp"
                 android:paddingTop="2dp"
-                android:text="Pickup in 11 minutes"
+                android:text="Pickup in 8 minutes"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -360,7 +360,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="196dp"
                 android:paddingTop="2dp"
-                android:text="0.3km away"
+                android:text="0.8km away"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -372,7 +372,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="220dp"
                 android:paddingTop="2dp"
-                android:text="5 Changi Business Park Central, Singapore 494372"
+                android:text="7 Changi Business Park Central, Singapore 494372"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -383,7 +383,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="154dp"
-                android:text="| 102 ratings"
+                android:text="| 76 ratings"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
