@@ -6,6 +6,7 @@ import androidx.appcompat.widget.SearchView;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -46,13 +47,19 @@ public class Search extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, foodlist);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
-                Toast.makeText(Search.this, "You Click -" + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Search.this, restaurant_list.class);
-                startActivity(intent);
-                addToHistory(adapterView.getItemAtPosition(i).toString());
-                listView.setVisibility(View.GONE);
+                    Toast.makeText(Search.this, "You Click -" + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+                    if (adapterView.getItemAtPosition(i).toString().equals("McYouTwit Burgers and Fries")) {
+                        Log.d("Selected Item", adapterView.getItemAtPosition(i).toString());
+                        Intent intent = new Intent(Search.this, restaurant1.class);
+                        startActivity(intent);
+                    }else{
+                        Intent intent = new Intent(Search.this, restaurant_list.class);
+                        startActivity(intent);
+                    }
+                    addToHistory(adapterView.getItemAtPosition(i).toString());
+                    listView.setVisibility(View.GONE);
             // Show the search history when there is text in the SearchView
-                historyListView.setVisibility(View.VISIBLE);
+                    historyListView.setVisibility(View.VISIBLE);
 
     });
         loadSearchHistory();

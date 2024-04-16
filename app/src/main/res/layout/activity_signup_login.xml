@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupLoginActivity">
+
+    <TextView
+        android:id="@+id/q_less"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q-Less."
+        android:gravity="center"
+        android:textColor="@color/q_less__color"
+        android:textStyle="bold"
+        android:fontFamily="@font/bitter"
+        android:textSize="60dp"
+        android:paddingTop="200dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id = "@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q_less"
+        android:layout_centerInParent="true"
+        android:text="Meals without queues"
+        android:textSize="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_button"
+        android:text="Sign Up"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/q_less__color"
+        android:background="@drawable/rounded_button_order_summary"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginStart="162dp"
+        android:background="@android:color/transparent"
+        android:text="Skip for now"
+        android:textAllCaps="false"
+        android:textColor="@color/my_secondary" />
+
+</RelativeLayout>
