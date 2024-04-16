@@ -47,6 +47,17 @@
         android:paddingBottom="50dp"
         android:layout_below = "@id/order_placed"
         android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/order_id_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_placed"
+        android:layout_centerInParent="true"
+        android:paddingTop="50dp"
+        android:paddingBottom="50dp"
+        android:text="#2232309d" />
+
     <View
         android:layout_width="100dp"
         android:layout_height="1dp"

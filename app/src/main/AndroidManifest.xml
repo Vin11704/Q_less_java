@@ -38,7 +38,7 @@
             android:name=".restaurant4"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".welcome_page"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -72,9 +72,6 @@
             android:name=".Search"
             android:exported="true" />
         <activity
-            android:name=".RestaurantAdapter"
-            android:exported="false" />
-        <activity
             android:name=".FoodDetailActivity"
             android:exported="true" />
         <activity
@@ -90,7 +87,7 @@
             android:name=".CheckoutActivity"
             android:exported="true" />
         <activity
-            android:name=".welcome_page"
+            android:name=".Login"
             android:exported="true" />
         <activity
             android:name=".restaurant1"

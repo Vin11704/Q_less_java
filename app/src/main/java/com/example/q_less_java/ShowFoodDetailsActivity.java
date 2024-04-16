@@ -102,11 +102,8 @@ public class ShowFoodDetailsActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
-
     }
+
 
     private void initView() {
         addToCartBtn = findViewById(R.id.addToCartBtn);

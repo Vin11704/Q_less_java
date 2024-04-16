@@ -62,7 +62,7 @@ public class CartManager {
 
     public Double getTotalFee(){
         ArrayList<CategoryDomain> listfood = getListCart();
-        double fee = 0;
+        double fee = 0.0;
         for ( int i = 0; i < listfood.size(); i++){
             fee = fee + (listfood.get(i).getPrice() * listfood.get(i).getNumberInCart());
         }
