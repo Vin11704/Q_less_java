@@ -15,7 +15,9 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class Search extends AppCompatActivity {
 
@@ -27,6 +29,7 @@ public class Search extends AppCompatActivity {
     ArrayAdapter<String> arrayAdapter;
     HistoryArrayAdapter historyAdapter;
     ArrayList<String> searchHistoryList;
+    private Map<String, Class<?>> searchMap;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +38,13 @@ public class Search extends AppCompatActivity {
         listView = findViewById(R.id.list_item);
         historyListView = findViewById(R.id.history_list);
         ImageButton imageButton = findViewById(R.id.back_button);
+
+        searchMap = new HashMap<>();
+        searchMap.put("McYouTwit Burgers and Fries", restaurant1.class);
+        searchMap.put("Malone's Cone", restaurant2.class);
+        searchMap.put("Ah Huat Noodle Soup", restaurant3.class);
+        searchMap.put("OISHI DESU", restaurant4.class);
+        searchMap.put("Thai Thae, Real Thai", restaurant5.class);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,32 +57,19 @@ public class Search extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, foodlist);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener((adapterView, view, i, l) -> {
-                    Toast.makeText(Search.this, "You Click -" + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
-                    if (adapterView.getItemAtPosition(i).toString().equals("McYouTwit Burgers and Fries")) {
-                        Log.d("Selected Item", adapterView.getItemAtPosition(i).toString());
-                        Intent intent = new Intent(Search.this, restaurant1.class);
-                        startActivity(intent);
-                    } else if (adapterView.getItemAtPosition(i).toString().equals("Malone's Cone")) {
-                        Intent intent = new Intent(Search.this, restaurant2.class);
-                        startActivity(intent);
+            String selectedItem = adapterView.getItemAtPosition(i).toString();
+            Toast.makeText(Search.this, "You Click -" + selectedItem, Toast.LENGTH_SHORT).show();
+            // Use the map to find the corresponding activity class
+            Class<?> activityClass = searchMap.getOrDefault(selectedItem, restaurant_list.class);
 
-                    } else if (adapterView.getItemAtPosition(i).toString().equals("Ah Huat Noodle Soup")) {
-                        Intent intent = new Intent(Search.this, restaurant3.class);
-                        startActivity(intent);
-                    } else if (adapterView.getItemAtPosition(i).toString().equals("OISHI DESU")) {
-                        Intent intent = new Intent(Search.this, restaurant4.class);
-                        startActivity(intent);
-                    } else if (adapterView.getItemAtPosition(i).toString().equals("Thai Thae, Real Thai")) {
-                        Intent intent = new Intent(Search.this, restaurant5.class);
-                        startActivity(intent);
-                    } else{
-                        Intent intent = new Intent(Search.this, restaurant_list.class);
-                        startActivity(intent);
-                    }
-                    addToHistory(adapterView.getItemAtPosition(i).toString());
-                    listView.setVisibility(View.GONE);
+            // Create an intent to start the appropriate activity
+            Intent intent = new Intent(Search.this, activityClass);
+            startActivity(intent);
+
+            addToHistory(adapterView.getItemAtPosition(i).toString());
+            listView.setVisibility(View.GONE);
             // Show the search history when there is text in the SearchView
-                    historyListView.setVisibility(View.VISIBLE);
+            historyListView.setVisibility(View.VISIBLE);
 
     });
         loadSearchHistory();
@@ -93,33 +90,20 @@ public class Search extends AppCompatActivity {
             }
         });
 
+
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 arrayAdapter.getFilter().filter(query);
                 addToHistory(query);
                 listView.setVisibility(View.GONE);
-                if (query.equals("McYouTwit Burgers and Fries")) {
-                    Intent intent = new Intent(Search.this, restaurant1.class);
-                    startActivity(intent);
-                } else if (query.equals("Malone's Cone")) {
-                    Intent intent = new Intent(Search.this, restaurant2.class);
-                    startActivity(intent);
+                Class<?> activity = searchMap.getOrDefault(query, restaurant_list.class);
 
-                } else if (query.equals("Ah Huat Noodle Soup")) {
-                    Intent intent = new Intent(Search.this, restaurant3.class);
-                    startActivity(intent);
-                } else if (query.equals("OISHI DESU")) {
-                    Intent intent = new Intent(Search.this, restaurant4.class);
-                    startActivity(intent);
-                } else if (query.equals("Thai Thae, Real Thai")) {
-                    Intent intent = new Intent(Search.this, restaurant5.class);
-                    startActivity(intent);
-                } else{
-                    Intent intent = new Intent(Search.this, restaurant_list.class);
-                    startActivity(intent);
-                }
-                return false;
+                // Start the activity associated with the query
+                Intent intent = new Intent(Search.this, activity);
+                startActivity(intent);
+
+                return true;
             }
 
             @Override

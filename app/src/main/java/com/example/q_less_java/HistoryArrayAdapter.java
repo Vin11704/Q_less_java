@@ -15,7 +15,9 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 public class HistoryArrayAdapter extends ArrayAdapter<String> {
 
@@ -40,29 +42,19 @@ public class HistoryArrayAdapter extends ArrayAdapter<String> {
         Log.d("Position", item);
         itemButton.setText(item);
 
-        itemButton.setOnClickListener(v ->{
-            if (item.equals("McYouTwit Burgers and Fries")) {
-                Intent intent = new Intent(getContext(), restaurant1.class);
-                getContext().startActivity(intent);
-            } else if (item.equals("Malone's Cone")) {
-                Intent intent = new Intent(getContext(), restaurant2.class);
-                getContext().startActivity(intent);
+        Map<String, Class<?>> restaurantMap = new HashMap<>();
+        restaurantMap.put("McYouTwit Burgers and Fries", restaurant1.class);
+        restaurantMap.put("Malone's Cone", restaurant2.class);
+        restaurantMap.put("Ah Huat Noodle Soup", restaurant3.class);
+        restaurantMap.put("OISHI DESU", restaurant4.class);
+        restaurantMap.put("Thai Thae, Real Thai", restaurant5.class);
 
-            } else if (item.equals("Ah Huat Noodle Soup")) {
-                Intent intent = new Intent(getContext(), restaurant3.class);
-                getContext().startActivity(intent);
-            } else if (item.equals("OISHI DESU")) {
-                Intent intent = new Intent(getContext(), restaurant4.class);
-                getContext().startActivity(intent);
-            } else if (item.equals("Thai Thae, Real Thai")) {
-                Intent intent = new Intent(getContext(), restaurant5.class);
-                getContext().startActivity(intent);
-            } else{
-                Intent intent = new Intent(getContext(), restaurant_list.class);
-                getContext().startActivity(intent);
-            }
-
+        itemButton.setOnClickListener(v -> {
+            Class<?> activityClass = restaurantMap.getOrDefault(item, restaurant_list.class);
+            Intent intent = new Intent(getContext(), activityClass);
+            getContext().startActivity(intent);
         });
+
 
         // Set the click listener for the remove button
         removeButton.setOnClickListener(v -> {
