@@ -308,7 +308,7 @@
 
                 </ImageButton>
 
-                <androidx.appcompat.widget.SearchView
+                <SearchView
                     android:id="@+id/search_bar"
                     android:layout_width="310dp"
                     android:layout_height="wrap_content"

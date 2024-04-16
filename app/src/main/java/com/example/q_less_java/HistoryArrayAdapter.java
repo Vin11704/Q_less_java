@@ -41,8 +41,27 @@ public class HistoryArrayAdapter extends ArrayAdapter<String> {
         itemButton.setText(item);
 
         itemButton.setOnClickListener(v ->{
-            Intent intent = new Intent(getContext(), restaurant_list.class);
-            getContext().startActivity(intent);
+            if (item.equals("McYouTwit Burgers and Fries")) {
+                Intent intent = new Intent(getContext(), restaurant1.class);
+                getContext().startActivity(intent);
+            } else if (item.equals("Malone's Cone")) {
+                Intent intent = new Intent(getContext(), restaurant2.class);
+                getContext().startActivity(intent);
+
+            } else if (item.equals("Ah Huat Noodle Soup")) {
+                Intent intent = new Intent(getContext(), restaurant3.class);
+                getContext().startActivity(intent);
+            } else if (item.equals("OISHI DESU")) {
+                Intent intent = new Intent(getContext(), restaurant4.class);
+                getContext().startActivity(intent);
+            } else if (item.equals("Thai Thae, Real Thai")) {
+                Intent intent = new Intent(getContext(), restaurant5.class);
+                getContext().startActivity(intent);
+            } else{
+                Intent intent = new Intent(getContext(), restaurant_list.class);
+                getContext().startActivity(intent);
+            }
+
         });
 
         // Set the click listener for the remove button

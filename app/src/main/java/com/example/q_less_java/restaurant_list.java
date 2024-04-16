@@ -85,5 +85,14 @@ public class restaurant_list extends AppCompatActivity {
             }
         });
 
+        SearchView searchView = findViewById(R.id.search_bar);
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchIntent = new Intent(restaurant_list.this, Search.class);
+                startActivity(searchIntent);
+            }
+        });
+
     }
 }

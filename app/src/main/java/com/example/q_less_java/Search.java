@@ -99,8 +99,26 @@ public class Search extends AppCompatActivity {
                 arrayAdapter.getFilter().filter(query);
                 addToHistory(query);
                 listView.setVisibility(View.GONE);
-                Intent intent = new Intent(Search.this, restaurant_list.class);
-                startActivity(intent);
+                if (query.equals("McYouTwit Burgers and Fries")) {
+                    Intent intent = new Intent(Search.this, restaurant1.class);
+                    startActivity(intent);
+                } else if (query.equals("Malone's Cone")) {
+                    Intent intent = new Intent(Search.this, restaurant2.class);
+                    startActivity(intent);
+
+                } else if (query.equals("Ah Huat Noodle Soup")) {
+                    Intent intent = new Intent(Search.this, restaurant3.class);
+                    startActivity(intent);
+                } else if (query.equals("OISHI DESU")) {
+                    Intent intent = new Intent(Search.this, restaurant4.class);
+                    startActivity(intent);
+                } else if (query.equals("Thai Thae, Real Thai")) {
+                    Intent intent = new Intent(Search.this, restaurant5.class);
+                    startActivity(intent);
+                } else{
+                    Intent intent = new Intent(Search.this, restaurant_list.class);
+                    startActivity(intent);
+                }
                 return false;
             }
 
