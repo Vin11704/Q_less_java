@@ -22,8 +22,8 @@ public class Search extends AppCompatActivity {
     SearchView searchView;
     ListView listView;
     ListView historyListView;
-    String[] foodlist = {"McYouTwit Burgers and Fries", "Malone's Cone", "Ah Huat Chicken Rice Noodle",
-            "Burger Combo", "Fries","Burger Bundle", "Matcha", "Caramel", "Brownie Sundae", "Beef Noodle","Seafood Rice Noodle", "Duck Noodle", "Chicken Noodle", "Meat Lover Bowl"};
+    String[] foodlist = {"McYouTwit Burgers and Fries", "Malone's Cone", "Ah Huat Noodle Soup",
+            "Burger Combo", "Fries","Burger Bundle", "Matcha", "Caramel", "Brownie Sundae", "Beef Noodle","Seafood Rice Noodle", "Duck Noodle", "Chicken Noodle", "Meat Lover Bowl","OISHI DESU","Thai Thae, Real Thai"};
     ArrayAdapter<String> arrayAdapter;
     HistoryArrayAdapter historyAdapter;
     ArrayList<String> searchHistoryList;
@@ -52,7 +52,20 @@ public class Search extends AppCompatActivity {
                         Log.d("Selected Item", adapterView.getItemAtPosition(i).toString());
                         Intent intent = new Intent(Search.this, restaurant1.class);
                         startActivity(intent);
-                    }else{
+                    } else if (adapterView.getItemAtPosition(i).toString().equals("Malone's Cone")) {
+                        Intent intent = new Intent(Search.this, restaurant2.class);
+                        startActivity(intent);
+
+                    } else if (adapterView.getItemAtPosition(i).toString().equals("Ah Huat Noodle Soup")) {
+                        Intent intent = new Intent(Search.this, restaurant3.class);
+                        startActivity(intent);
+                    } else if (adapterView.getItemAtPosition(i).toString().equals("OISHI DESU")) {
+                        Intent intent = new Intent(Search.this, restaurant4.class);
+                        startActivity(intent);
+                    } else if (adapterView.getItemAtPosition(i).toString().equals("Thai Thae, Real Thai")) {
+                        Intent intent = new Intent(Search.this, restaurant5.class);
+                        startActivity(intent);
+                    } else{
                         Intent intent = new Intent(Search.this, restaurant_list.class);
                         startActivity(intent);
                     }

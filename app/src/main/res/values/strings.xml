@@ -158,10 +158,14 @@
     <string name="store5_address">223 Changi South Ave 4, Singapore 543043</string>
 
 
-
     <!-- String for Homepage -->
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_restaurant_info">RestaurantInfo</string>
+
+    <!--- String for Register -->
+    <string name="account">Already have an account? <font fgcolor="red">Login</font></string>
+
+
 
 
 </resources>

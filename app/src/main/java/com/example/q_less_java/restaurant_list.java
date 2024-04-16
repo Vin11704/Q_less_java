@@ -3,6 +3,9 @@ package com.example.q_less_java;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -69,6 +72,15 @@ public class restaurant_list extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(restaurant_list.this, restaurant5.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton button = findViewById(R.id.back_button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(restaurant_list.this, HomePage.class);
                 startActivity(intent);
             }
         });
