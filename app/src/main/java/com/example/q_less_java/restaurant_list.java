@@ -1,11 +1,11 @@
 package com.example.q_less_java;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class restaurant_list extends AppCompatActivity {
 
@@ -18,6 +18,8 @@ public class restaurant_list extends AppCompatActivity {
 
     CardView store4_cart;
 
+    CardView store5_cart;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,7 @@ public class restaurant_list extends AppCompatActivity {
         store2_cart = findViewById(R.id.store2_cart);
         store3_cart = findViewById(R.id.store3_cart);
         store4_cart = findViewById(R.id.store4_cart);
+        store5_cart = findViewById(R.id.store5_cart);
 
         // Making the items clickable and link to sub-pages
         store1_cart.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +61,14 @@ public class restaurant_list extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(restaurant_list.this, restaurant4.class);
+                startActivity(intent);
+            }
+        });
+
+        store5_cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(restaurant_list.this, restaurant5.class);
                 startActivity(intent);
             }
         });

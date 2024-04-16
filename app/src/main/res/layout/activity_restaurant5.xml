@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".restaurant4">
+    tools:context=".restaurant5">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                 android:layout_height="91dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="52dp"
-                android:src="@drawable/store4_japanese"
+                android:src="@drawable/store5_thai_food"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="112dp"
                 android:layout_marginTop="88dp"
-                android:text="OISHI DESU"
+                android:text="@string/store5_name"
                 android:textColor="@color/q_less__color"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -130,7 +130,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="148dp"
                 android:paddingTop="2dp"
-                android:text="@string/store3_rating"
+                android:text="@string/store5_rating"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -141,7 +141,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="172dp"
                 android:paddingTop="2dp"
-                android:text="@string/store3_pick_up"
+                android:text="@string/store5_pick_up"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -152,7 +152,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="196dp"
                 android:paddingTop="2dp"
-                android:text="@string/store3_distance"
+                android:text="@string/store5_distance"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -163,7 +163,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="220dp"
                 android:paddingTop="2dp"
-                android:text="@string/store3_address"
+                android:text="@string/store5_address"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

@@ -2,6 +2,7 @@
 package com.example.q_less_java;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -54,6 +55,14 @@ public class CartListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        placeOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CartListActivity.this, OrderConfirmation.class);
+                startActivity(intent);
             }
         });
     }

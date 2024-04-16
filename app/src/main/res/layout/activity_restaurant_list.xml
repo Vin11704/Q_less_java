@@ -195,6 +195,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/store5_cart"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
@@ -207,14 +208,14 @@
                         android:layout_margin="5dp"
                         android:background="@color/white"
                         android:elevation="3dp"
-                        android:src="@drawable/store1_burger" />
+                        android:src="@drawable/store5_thai_food" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:paddingTop="5dp"
-                        android:text="@string/store1_name"
+                        android:text="@string/store5_name"
                         android:textColor="@color/black"
                         android:textSize="16dp"
                         android:textStyle="bold" />
@@ -224,14 +225,14 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:paddingTop="30dp"
-                        android:text="@string/store1_short_details" />
+                        android:text="@string/store5_short_details" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="130dp"
                         android:paddingTop="55dp"
-                        android:text="@string/store1_pick_up" />
+                        android:text="@string/store5_pick_up" />
 
                 </androidx.cardview.widget.CardView>
 

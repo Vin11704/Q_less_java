@@ -149,8 +149,19 @@
                                                     each cooked to perfection in our special sauces. Packed with fresh, high-quality ingredients,
                                                     this bowl is a carnivore\'s dream come true. Get ready for a meaty feast like no other!</string>
 
+    <!-- Strings for Restaurant 5 - Thai Thae, Real Thai-->
+    <string name="store5_name">Thai Thae, Real Thai</string>
+    <string name="store5_short_details">4.3 (1.3k+) | Thai-Issan | 0.4km away</string>
+    <string name="store5_rating">4.8</string>
+    <string name="store5_pick_up">Pick up in 15 minutes</string>
+    <string name="store5_distance">0.4km away</string>
+    <string name="store5_address">223 Changi South Ave 4, Singapore 543043</string>
+
+
+
     <!-- String for Homepage -->
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_restaurant_info">RestaurantInfo</string>
+
 
 </resources>

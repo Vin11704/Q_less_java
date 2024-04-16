@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Welcome!"
-                android:textColor="@color/lavender"
+                android:textColor="@color/q_less__color"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -124,12 +124,12 @@
                 android:id="@+id/signupRedirectText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? Sign Up"
-                android:textColor="@color/lavender"
-                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
-                android:layout_gravity="center_horizontal" />
+                android:text="Don't have an account? Sign Up"
+                android:textColor="@color/q_less__color"
+                android:textSize="16sp" />
 
             <View
                 android:layout_width="wrap_content"
@@ -140,7 +140,11 @@
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:background="@drawable/orange_button"
                 android:text="LOGIN NOW"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:cornerRadius="32dp" />
 
         </LinearLayout>

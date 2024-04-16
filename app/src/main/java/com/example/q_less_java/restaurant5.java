@@ -19,20 +19,22 @@ import com.example.q_less_java.Domain.CategoryDomain;
 
 import java.util.ArrayList;
 
-public class restaurant4 extends AppCompatActivity {
+public class restaurant5 extends AppCompatActivity {
+
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerViewCategoryList;
 
 
-    ImageView store4_arrow;
+    ImageView store5_arrow;
 
     CardView viewCard;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_restaurant4);
+        setContentView(R.layout.activity_restaurant5);
 
         recyclerViewCategoryList();
 
@@ -44,14 +46,14 @@ public class restaurant4 extends AppCompatActivity {
         });
 
         // Import clickable items
-        store4_arrow = findViewById(R.id.store5_arrow);
+        store5_arrow = findViewById(R.id.store5_arrow);
         viewCard = findViewById(R.id.viewCart);
 
         // Making the items clickable and link to sub-pages
-        store4_arrow.setOnClickListener(new View.OnClickListener() {
+        store5_arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(restaurant4.this, restaurant_list.class);
+                Intent intent = new Intent(restaurant5.this, restaurant_list.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +62,7 @@ public class restaurant4 extends AppCompatActivity {
         viewCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(restaurant4.this, CartListActivity.class);
+                Intent intent = new Intent(restaurant5.this, CartListActivity.class);
                 startActivity(intent);
             }
         });
@@ -77,10 +79,14 @@ public class restaurant4 extends AppCompatActivity {
 
         // This will be the list of all the items that we want to display in the RecyclerView, in which CategoryDomain is the function to create new displaying object with specific attributes/files
         ArrayList<CategoryDomain> category = new ArrayList<>();
-        category.add(new CategoryDomain("Teriyaki Chicken", "store4_menu1", "Sweet and intense sauce on marinated chicken, giving tender skin and juicy meat", 9.30));
-        category.add(new CategoryDomain("Pork Katsu Curry", "store4_menu2","Golden colored crispy pork, cooked with fresh sunflower oil.", 8.50));
-        category.add(new CategoryDomain("Omurice Special", "store4_menu3", "Flavourful authentic Tokyo fried rice covered in fresh and juicy omelette.", 10.00));
-        category.add(new CategoryDomain("Pork Ramen", "store4_japanese", "Chewy ramen noodle served with long-boiled pig-bones broth, topped with onsen egg.", 12.80));
+        category.add(new CategoryDomain("Pad Kra Pao", "store5_menu1", "Thai basil mice pork rice topped with fried egg giving both pleasant look and fragrance", 6.30));
+        category.add(new CategoryDomain("Tom Yum Talay", "store5_menu2","Fresh sea food cooked in authentic tom yom paste.", 8.80));
+        category.add(new CategoryDomain("Super Mixed Salad", "store5_menu3", "Flavourful papaya salad generously filled with fresh ingredients.", 16.90));
+        category.add(new CategoryDomain("Chicken Green Curry Soup", "store5_menu4", "Simple look with flavourful green curry soup spiced with organic herbs", 10.50));
+        category.add(new CategoryDomain("Braised Pork Soup", "store5_menu5", "Aromatic long-boiled soup served with tender pork trotters and duck eggs.", 11.80));
+        category.add(new CategoryDomain("Tum Talay", "store5_menu6", "Spicy seafood papaya salad.", 12.20));
+        category.add(new CategoryDomain("Crispy Pork Belly", "store5_menu7", "Golden, crispy and thick pork belly freshly cooked daily.", 13.80));
+
 
         adapter = new CategoryAdaptor(category);
         recyclerViewCategoryList.setAdapter(adapter);
