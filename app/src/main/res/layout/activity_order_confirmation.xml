@@ -84,24 +84,6 @@
         android:text="Thu,Mar 28, 4:15pm"
         android:textSize="30sp"/>
 
-    <TextView
-        android:id="@+id/location_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/date_time"
-        android:layout_centerInParent="true"
-        android:text="Pick up Location"
-        android:textSize="20sp"
-        android:paddingTop="20dp"/>
-
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/location_title"
-        android:layout_centerInParent="true"
-        android:text="LOCATION"
-        android:textSize="25sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/order_summary"
