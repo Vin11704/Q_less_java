@@ -24,15 +24,13 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="260dp">
-
-                </LinearLayout>
+                    android:layout_height="330dp" />
 
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/charaRecyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="393dp" />
+                    android:layout_height="400dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -44,14 +42,14 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="265dp"
+            android:layout_height="330dp"
             android:background="@color/white">
 
             <ImageView
                 android:id="@+id/store5_arrow"
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="70dp"
                 android:src="@drawable/arrow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -61,7 +59,7 @@
                 android:id="@+id/store2_search"
                 android:layout_width="77dp"
                 android:layout_height="51dp"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="70dp"
                 android:layout_marginRight="3dp"
                 android:src="@drawable/search"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -72,111 +70,107 @@
                 android:layout_width="84dp"
                 android:layout_height="91dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="130dp"
                 android:src="@drawable/store4_japanese"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/imageView10"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="148dp"
                 android:src="@drawable/fav"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/store4_profile" />
 
             <ImageView
+                android:id="@+id/imageView11"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="172dp"
                 android:src="@drawable/duration"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
             <ImageView
+                android:id="@+id/imageView12"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="196dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11"
                 app:srcCompat="@drawable/pickup" />
 
             <ImageView
+                android:id="@+id/imageView13"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="220dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
                 app:srcCompat="@drawable/location" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="112dp"
-                android:layout_marginTop="88dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
                 android:text="OISHI DESU"
                 android:textColor="@color/q_less__color"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/store4_profile"
+                app:layout_constraintTop_toTopOf="@+id/store4_profile" />
 
             <TextView
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="148dp"
                 android:paddingTop="2dp"
                 android:text="@string/store3_rating"
                 android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/imageView10"
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
-                android:layout_marginTop="172dp"
                 android:paddingTop="2dp"
                 android:text="@string/store3_pick_up"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
-                android:layout_marginTop="196dp"
                 android:paddingTop="2dp"
                 android:text="@string/store3_distance"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_marginStart="40dp"
-                android:layout_marginTop="220dp"
                 android:paddingTop="2dp"
                 android:text="@string/store3_address"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="154dp"
+                android:paddingTop="5dp"
                 android:text="| 346 ratings"
                 android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -195,31 +189,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="10dp"
-                android:paddingTop="20dp"
+                android:layout_gravity="center"
                 android:text="View Cart"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/current_cart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="85dp"
-                android:paddingTop="20dp"
-                android:text="(X item)"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/total_cost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="310dp"
-                android:paddingTop="20dp"
-                android:text="$XX.XX"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />

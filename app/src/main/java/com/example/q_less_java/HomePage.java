@@ -146,8 +146,11 @@ public class HomePage extends AppCompatActivity implements RestaurantAdapter.OnI
             case 1:
                 startActivity(new Intent(HomePage.this, restaurant2.class));
                 break;
-            case 3:
+            case 2:
                 startActivity(new Intent(HomePage.this, restaurant3.class));
+                break;
+            case 3:
+                startActivity(new Intent(HomePage.this, restaurant5.class));
                 break;
             // Add cases for other positions as needed
         }

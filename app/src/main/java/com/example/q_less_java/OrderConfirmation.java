@@ -27,7 +27,7 @@ public class OrderConfirmation extends AppCompatActivity {
         button_order_summary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(OrderConfirmation.this, OrderSummary.class);
+                Intent intent = new Intent(OrderConfirmation.this, HomePage.class);
                 startActivity(intent);
             }
         });
