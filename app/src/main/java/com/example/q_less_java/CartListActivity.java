@@ -151,6 +151,7 @@ public class CartListActivity extends AppCompatActivity {
 //        subtotal.setText("$" + itemTotal);
 //        taxFee.setText("$" + tax);
 //        orderTotal.setText("$" + total);
+
         double tax = cartManager.getTotalFee() * percentTax;
         double total = cartManager.getTotalFee() + tax;
         double itemTotal = cartManager.getTotalFee();
